@@ -8,6 +8,9 @@
   --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
   --transition-btn: background 0.2s, color 0.2s, border-color 0.2s;
   --nav-height: 72px;
+  --bg-grid-line: rgba(128, 128, 128, 0.14);
+  --bg-grid-size: 24px;
+  --bg-grid-opacity: 0.45;
 
   /* Light mode (default) */
   --bg-page: #ffffff;
@@ -32,6 +35,9 @@
   --btn-chip-bg: #efefef;
   --btn-chip-text: #000000;
   --btn-chip-hover: #e2e2e2;
+
+  --hero-accent-fill: #ffffff;
+  --hero-accent-stroke: #000000;
 
   --input-border: #c0c0c0;
   --input-bg: #ffffff;
@@ -58,6 +64,9 @@
 
 /* Dark Mode Theme */
 [data-theme="dark"] {
+  --bg-grid-line: rgba(255, 255, 255, 0.12);
+  --bg-grid-opacity: 0.42;
+
   --bg-page: #000000;
   --bg-card: #111111;
   --bg-nav: rgba(0, 0, 0, 0.92);
@@ -80,6 +89,9 @@
   --btn-chip-bg: #222222;
   --btn-chip-text: #ffffff;
   --btn-chip-hover: #333333;
+
+  --hero-accent-fill: #000000;
+  --hero-accent-stroke: #ffffff;
 
   --input-border: #444444;
   --input-bg: #111111;
@@ -115,6 +127,8 @@ html {
 }
 
 body {
+  position: relative;
+  isolation: isolate;
   background: var(--bg-page);
   color: var(--text-primary);
   font-family: var(--font-body);
@@ -123,6 +137,19 @@ body {
   -webkit-font-smoothing: antialiased;
   transition: background 0.4s ease, color 0.4s ease;
   overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background-image:
+    linear-gradient(to right, var(--bg-grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--bg-grid-line) 1px, transparent 1px);
+  background-size: var(--bg-grid-size) var(--bg-grid-size);
+  opacity: var(--bg-grid-opacity);
 }
 
 a {
@@ -446,7 +473,16 @@ button {
   line-height: 1.10;
   letter-spacing: -0.02em;
   margin-bottom: 20px;
-  color: var(--text-primary);
+  color: var(--hero-accent-fill);
+  text-shadow:
+    0.65px 0 0 var(--hero-accent-stroke),
+    -0.65px 0 0 var(--hero-accent-stroke),
+    0 0.65px 0 var(--hero-accent-stroke),
+    0 -0.65px 0 var(--hero-accent-stroke),
+    0.65px 0.65px 0 var(--hero-accent-stroke),
+    -0.65px 0.65px 0 var(--hero-accent-stroke),
+    0.65px -0.65px 0 var(--hero-accent-stroke),
+    -0.65px -0.65px 0 var(--hero-accent-stroke);
 }
 
 .hero p {

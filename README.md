@@ -12,26 +12,6 @@ This portfolio brings together my story, skills, and practical work in a clean, 
 
 ---
 
-## Screenshots
-
-> Replace these with your actual images and paths.
-
-```
-/assets/screenshot-home.png
-/assets/screenshot-about.png
-/assets/screenshot-projects.png
-```
-
-Example embed (after you add images):
-```markdown
-![Home](assets/screenshot-home.png)
-![About](assets/screenshot-about.png)
-![Projects](assets/screenshot-projects.png)
-```
-/assets/screenshot-home.png
-
----
-
 ## How HTML, CSS, and JavaScript Are Used
 
 ### 1) HTML (Structure)

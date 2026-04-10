@@ -28,6 +28,7 @@ Example embed (after you add images):
 ![About](assets/screenshot-about.png)
 ![Projects](assets/screenshot-projects.png)
 ```
+/assets/screenshot-home.png
 
 ---
 

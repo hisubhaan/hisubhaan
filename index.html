@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subhaan – IT Student & Developer</title>
+  <meta name="description"
+    content="Personal portfolio of Subhaan, an IT student at GTU passionate about software development, Linux, and building things that matter.">
+  <meta name="keywords" content="Subhaan, IT student, GTU, portfolio, developer, Python, web development, Gujarat">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700&family=Space+Grotesk:wght@700&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#home" class="nav-brand">
+      subhaan.
+    </a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <div class="social-actions" aria-label="Social and contact links">
+        <a href="mailto:maleksubhaan135@gmail.com" class="social-action-btn" aria-label="Email Subhaan">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="https://github.com/hisubhaan" target="_blank" rel="noopener noreferrer" class="social-action-btn" aria-label="Visit GitHub profile">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.52-2.55-.29-5.23-1.28-5.23-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.47.11-3.07 0 0 .96-.31 3.15 1.17.91-.25 1.89-.38 2.86-.38s1.95.13 2.86.38c2.19-1.48 3.15-1.17 3.15-1.17.62 1.6.23 2.78.11 3.07.73.8 1.18 1.82 1.18 3.07 0 4.4-2.68 5.38-5.24 5.67.41.35.77 1.03.77 2.08 0 1.5-.01 2.72-.01 3.09 0 .3.2.66.79.55A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+          </svg>
+        </a>
+        <a href="https://instagram.com/subh5an" target="_blank" rel="noopener noreferrer" class="social-action-btn" aria-label="Visit Instagram profile">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+            <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+          </svg>
+        </a>
+      </div>
+      <button class="theme-toggle-btn icon-action-btn" aria-label="Toggle Dark Mode">
+        <i data-lucide="sun" width="20" height="20" id="theme-icon"></i>
+      </button>
+      <button id="mobile-menu-btn" class="icon-action-btn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav"><i data-lucide="menu" width="22" height="22"></i></button>
+    </div>
+  </nav>
+
+  <div id="mobile-nav">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <div class="mobile-nav-social">
+      <a href="mailto:maleksubhaan135@gmail.com" class="mobile-social-btn" aria-label="Email Subhaan">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a href="https://github.com/hisubhaan" target="_blank" rel="noopener noreferrer" class="mobile-social-btn" aria-label="Visit GitHub profile">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.52-2.55-.29-5.23-1.28-5.23-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.47.11-3.07 0 0 .96-.31 3.15 1.17.91-.25 1.89-.38 2.86-.38s1.95.13 2.86.38c2.19-1.48 3.15-1.17 3.15-1.17.62 1.6.23 2.78.11 3.07.73.8 1.18 1.82 1.18 3.07 0 4.4-2.68 5.38-5.24 5.67.41.35.77 1.03.77 2.08 0 1.5-.01 2.72-.01 3.09 0 .3.2.66.79.55A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+        </svg>
+      </a>
+      <a href="https://instagram.com/subh5an" target="_blank" rel="noopener noreferrer" class="mobile-social-btn" aria-label="Visit Instagram profile">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+          <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+          <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <h1 class="reveal">IT Student & Developer.</h1>
+    <p class="reveal">Hi, I'm Subhaan. An IT Diploma Student at BBIT passionate about software, Linux, and building
+      things that serve a
+      purpose with confident minimalism.</p>
+    <div class="hero-actions reveal">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-secondary">Let's Connect</a>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-label reveal">01. About Me</div>
+    <h2 class="section-title reveal">Curious mind, practical builder.</h2>
+
+    <div class="about-layout reveal">
+      <img src="profile.jpg" alt="Subhaan Portrait" class="about-image">
+      <div class="about-content">
+        <h3>Behind the Code</h3>
+        <p>I'm a 16-year-old IT Diploma student at Bhailalbhai & Bhikhabhai Institute of Technology (BBIT), currently
+          based in Anand,
+          Gujarat. In my 1st year (Semester 2), I'm heavily focused on building a solid foundation in programming
+          fundamentals, Python, and applied mathematics.</p>
+        <p>Beyond the typical curriculum, my deep interest lies in exploring OS ecosystems. I enjoy tinkering with Linux
+          distributions and even established a personal home server (CasaOS on Ubuntu) out of an old laptop. I believe
+          the best way to learn is by taking things apart and building them back up.</p>
+        <div class="about-meta">
+          <div class="meta-item">
+            <div class="meta-label">Location</div>
+            <div class="meta-val">Anand, Gujarat</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Institution</div>
+            <div class="meta-val">BBIT – Diploma IT</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Status</div>
+            <div class="meta-val">Scrolling Reels</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-label reveal">02. Stack and Tools</div>
+    <h2 class="section-title reveal">What I work with.</h2>
+    <p class="section-desc reveal">A structured mix of the technical languages I construct with and the environments I
+      orchestrate.</p>
+
+    <div class="skills-grid reveal">
+      <div class="skill-card">
+        <div class="skill-card-icon"><i data-lucide="code-2" width="24" height="24"></i></div>
+        <h3>Programming</h3>
+        <div class="skill-tags">
+          <span class="btn-chip">Python</span>
+          <span class="btn-chip">HTML5</span>
+          <span class="btn-chip">CSS3</span>
+          <span class="btn-chip">JavaScript</span>
+          <span class="btn-chip">C Fundamentals</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-icon"><i data-lucide="terminal" width="24" height="24"></i></div>
+        <h3>Environment</h3>
+        <div class="skill-tags">
+          <span class="btn-chip">Linux / Ubuntu</span>
+          <span class="btn-chip">VS Code</span>
+          <span class="btn-chip">Jupyter</span>
+          <span class="btn-chip">Git & GitHub</span>
+          <span class="btn-chip">CasaOS</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-icon"><i data-lucide="brain" width="24" height="24"></i></div>
+        <h3>Core Competencies</h3>
+        <div class="skill-tags">
+          <span class="btn-chip">Problem Solving</span>
+          <span class="btn-chip">Self-learning</span>
+          <span class="btn-chip">Resourcefulness</span>
+          <span class="btn-chip">Adaptability</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-label reveal">03. Practical Work</div>
+    <h2 class="section-title reveal">Selected Projects.</h2>
+    <p class="section-desc reveal">Systems and interfaces I've built while navigating my learning path.</p>
+
+    <div class="card-grid reveal">
+
+      <!-- Project 1 -->
+      <div class="card">
+        <img src="screenshot1.png" alt="Intro Website" class="card-image">
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="card-tag">HTML</span>
+            <span class="card-tag">CSS</span>
+          </div>
+          <div class="card-title">Basic Introduction</div>
+          <div class="card-desc">A foundational personal website structured with raw HTML and CSS. Explores basic layout
+            mechanics and styles, successfully deployed on Netlify.</div>
+          <a href="https://subh5an.netlify.app/" target="_blank" class="btn-secondary card-cta">View Live Site</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card">
+        <img src="screenshot2.png" alt="Home Server" class="card-image">
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="card-tag">Linux</span>
+            <span class="card-tag">Network Admin</span>
+          </div>
+          <div class="card-title">Personal Home Server</div>
+          <div class="card-desc">Converted a hardware-aged laptop into a robust Ubuntu Server running CasaOS. Configured
+            network-attached storage (NAS) workflows and self-hosted apps.</div>
+          <a href="#" class="btn-secondary card-cta">Read Write-up</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="section-label reveal">04. Connection</div>
+    <h2 class="section-title reveal">Initiate Contact.</h2>
+
+    <div class="contact-layout reveal">
+      <div class="contact-info">
+        <p>Whether you're looking to discuss a project, collaboration, or a simple tech inquiry, I'm always reachable.
+          Submit coordinates through the secure form or access any of my networks.</p>
+
+        <div class="contact-links">
+          <a href="mailto:maleksubhaan135@gmail.com" class="contact-link-block">
+            <div class="contact-link-icon"><i data-lucide="mail"></i></div>
+            <div class="contact-link-text">
+              <h4>Email</h4>
+              <span>maleksubhaan135@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://github.com/hisubhaan" target="_blank" rel="noopener noreferrer" class="contact-link-block">
+            <div class="contact-link-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+            </div>
+            <div class="contact-link-text">
+              <h4>GitHub Repository</h4>
+              <span>github.com/hisubhaan</span>
+            </div>
+          </a>
+          <a href="https://instagram.com/subh5an" target="_blank" class="contact-link-block">
+            <div class="contact-link-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+            </div>
+            <div class="contact-link-text">
+              <h4>Instagram</h4>
+              <span>@subh5an</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label class="form-label" for="name">Name</label>
+          <input type="text" id="name" class="form-input" placeholder="e.g. John Doe">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Your Email</label>
+          <input type="email" id="email" class="form-input" placeholder="you@domain.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea id="message" class="form-textarea" placeholder="Input details here..."></textarea>
+        </div>
+        <button class="btn-primary" onclick="handleTransmit()" style="width: 100%; padding: 16px;">
+          Transmit Message
+        </button>
+        <div id="form-status"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        subhaan.
+      </div>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-col-title">Navigation</div>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Profiles</div>
+          <a href="https://github.com/hisubhaan" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://instagram.com/subh5an" target="_blank">Instagram</a>
+          <a href="https://subh5an.netlify.app/" target="_blank">V1 Portfolio</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Contact</div>
+          <a href="mailto:maleksubhaan135@gmail.com">Email Direct</a>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="footer-bottom">
+        <span>© 2025 Subhaan. Built with HTML, CSS, and structural design principles.</span>
+        <span>Anand, Gujarat</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

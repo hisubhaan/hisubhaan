@@ -18,7 +18,7 @@ The portfolio is intentionally built without any frameworks or build tools. Ever
 HTML forms the **skeleton** of the portfolio. It defines every section of the page — the navigation bar, hero/intro section, about me blurb, project cards, skills list, and contact form. Semantic elements like `<header>`, `<main>`, `<section>`, `<article>`, and `<footer>` are used throughout to keep the markup meaningful and accessible.
 
 ### 🎨 CSS — Design & Visual Style
-CSS handles everything you **see and feel**. It controls the layout (using Flexbox and CSS Grid), colour palette, typography, spacing, and responsive breakpoints so the site looks great on any screen size — from phones to wide desktops. Smooth hover effects, transitions, and subtle animations are also driven entirely by CSS to keep the experience polished without relying on JavaScript for presentation.
+CSS handles everything you **see and feel**. It controls the layout (using Flexbox and CSS Grid), color palette, typography, spacing, and responsive breakpoints so the site looks great on any screen size — from phones to wide desktops. Smooth hover effects, transitions, and subtle animations are also driven entirely by CSS to keep the experience polished without relying on JavaScript for presentation.
 
 ### ⚡ JavaScript — Interactivity & Behaviour
 JavaScript adds **life and responsiveness** to the portfolio. It powers the mobile navigation toggle, smooth-scroll behaviour between sections, dynamic rendering of project cards from a data array, and any form validation on the contact section. JS keeps the page interactive and engaging without needing a heavyweight framework.

@@ -32,7 +32,7 @@ A big thank you to the tools and people that made building this easier and more 
 | Contributor | Role |
 |---|---|
 | **[GitHub Copilot](https://github.com/features/copilot)** | AI pair-programmer — helped write, refactor, and speed up repetitive code throughout the project |
-| **[Antigravity](https://githubnext.com/)** | Inspiration and tooling support from the GitHub Next team |
+| **[Antigravity](https://antigravity.google/)** | AI pair-programmer, with granted permission of using any paid model for free, should have Google One |
 | **[Claude](https://www.anthropic.com/claude)** (Anthropic) | AI assistant — helped think through structure, copy, and documentation |
 
 ---
